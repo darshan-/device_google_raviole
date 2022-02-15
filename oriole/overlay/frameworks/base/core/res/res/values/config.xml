@@ -27,7 +27,7 @@
 
     <!-- Flag indicating whether the we should enable the automatic brightness in Settings.
          Software implementation will be used if config_hardware_auto_brightness_available is not set -->
-    <bool name="config_automatic_brightness_available">true</bool>
+    <bool name="config_automatic_brightness_available">false</bool>
 
     <!-- Minimum screen brightness allowed by the power manager. -->
     <integer name="config_screenBrightnessDim">6</integer>
@@ -42,7 +42,23 @@
 
     <!-- Default screen brightness setting
          Must be in the range specified by minimum and maximum. -->
-    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.17429718</item>
+    <!--item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.17429718</item-->
+    <!--
+100%: 0.62
+ 95%: 0.469
+ 90%: 0.368
+ 85%: 0.280
+ 80%: 0.209
+ 75%: 0.163
+ 70%: 0.125
+ 55%: 0.063
+ 50%: 0.052
+ 45%: 0.042
+ 25%: 0.013
+ 10%: 0.002
+  0%: 0.0
+    -->
+    <item name="config_screenBrightnessSettingDefaultFloat" format="float" type="dimen">0.05</item>
 
     <!-- The default refresh rate. Pixel 6 manages this using the peak refresh rate setting, so set
          this value to 0 so it has no effect. -->
